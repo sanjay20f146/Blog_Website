@@ -4,7 +4,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const Blog = require("./models/blog");
 
-mongoose.connect("mongodb+srv://myhp1013:*******@cluster0.ainmq1u.mongodb.net/?retryWrites=true&w=majority").then(() => {
+mongoose.connect("mongodb+srv://${username}:${password}cluster0.ainmq1u.mongodb.net/?retryWrites=true&w=majority").then(() => {
     console.log('database connected');
 }).catch((err) => {
     console.log(err);
